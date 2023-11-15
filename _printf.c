@@ -3,7 +3,7 @@
 void print_buffer(char buffer[], int *buff_ind);
 
 /**
- * _printf - Printf function
+ * _printf - Printf function for formatted text
  * @format: format parameter.
  * Return: printed chars.
  */
@@ -14,8 +14,8 @@ int _printf(const char *format, ...)
 	va_list list;
 	char buffer[BUFF_SIZE];
 
-	if (fornat == NULL)
-		returm (-1);
+	if (format == NULL)
+		return (-1);
 
 	va_start(list, format);
 
